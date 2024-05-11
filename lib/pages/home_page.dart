@@ -1,9 +1,11 @@
 import 'package:e_commerse_app/components/botttom_navigation_bar.dart';
 import 'package:e_commerse_app/components/recent_product_card.dart';
 import 'package:e_commerse_app/components/reusable_textfield.dart';
+import 'package:e_commerse_app/pages/cart_page.dart';
 import 'package:e_commerse_app/pages/item_preview_page.dart';
 import 'package:e_commerse_app/pages/search_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatefulWidget {
@@ -93,11 +95,19 @@ class _HomePageState extends State<HomePage> {
                       Row(
                         children: [
                           // icon 01
-                          SvgPicture.asset(
-                            './assets/Buy.svg',
-                            height: 28,
-                            width: 28,
-                            fit: BoxFit.cover,
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: ((context) => CartPage())));
+                            },
+                            child: SvgPicture.asset(
+                              './assets/Buy.svg',
+                              height: 28,
+                              width: 28,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                           const SizedBox(
                             width: 4,

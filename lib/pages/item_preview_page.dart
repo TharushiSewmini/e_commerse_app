@@ -30,6 +30,7 @@ class _ItemPreviewPageState extends State<ItemPreviewPage> {
       bottomNavigationBar: AddToCartBottomNavigation(),
       appBar: AppBar(
         elevation: 0,
+        backgroundColor: Colors.white,
         scrolledUnderElevation: 0,
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios),

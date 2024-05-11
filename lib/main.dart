@@ -1,3 +1,4 @@
+import 'package:e_commerse_app/pages/cart_page.dart';
 import 'package:e_commerse_app/pages/home_page.dart';
 import 'package:e_commerse_app/pages/item_preview_page.dart';
 import 'package:e_commerse_app/pages/search_page.dart';
